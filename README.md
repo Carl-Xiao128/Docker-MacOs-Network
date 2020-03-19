@@ -9,7 +9,7 @@
 ```shell  
         docker inspect bbbbb | grep "IPAddress"
 ```
->![](https://github.com/Carl-Xiao128/Markdown-Pictures/raw/master/pictures/1584579991521.jpg)  
+>![](https://github.com/Carl-Xiao128/Markdown-Pictures/raw/master/pictures/1584583300148.jpg)  
 
 >- Visit `http://172.17.0.2:50070/`&emsp; Found out I can't access HDFS WebUI
 >- Try to ping container ip from mac terminal, it's failed too!  
