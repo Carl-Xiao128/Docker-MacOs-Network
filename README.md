@@ -23,7 +23,7 @@
 
 
 ## Here is the solution!
->- Using Docker for Mac experimental function: `Socket Proxy`
+>- Using Docker for Mac an experimental function: `Socket Proxy`
 > #### &emsp; 1. `Open Mac terminal` and `install jq`
 ```shell  
         brew install jq
