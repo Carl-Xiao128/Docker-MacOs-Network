@@ -61,12 +61,15 @@
 > #### &emsp; 8. Put  `socket.pac` file in directory `/Library/WebServer/Documents`
 > #### &emsp;&ensp; and Visit `http://localhost/socket.pac`, if the browser shows:
 >![](https://github.com/Carl-Xiao128/Markdown-Pictures/raw/master/pictures/1584593940858.jpg)
-> #### &emsp; 9. `Check the containers hosts`
+> #### &emsp; 9. `Check the containers hosts`,`get hosts 172.17.0.2 aaaaa`
 ```shell  
         cat /etc/hosts
 ```
 >![](https://github.com/Carl-Xiao128/Markdown-Pictures/raw/master/pictures/1584594900541.jpg)
-> #### &emsp; 10. `Modify the MacOs hosts File`
+> #### &emsp; 10. `Modify the MacOs hosts File（Add 172.17.0.2 aaaaa to hosts file）`
+```shell  
+        vim /etc/hosts   
+```
 >![](https://github.com/Carl-Xiao128/Markdown-Pictures/raw/master/pictures/1584595062931.jpg)
 > #### &emsp; 11. `The Socket Proxy configuration is finished!`
 > #### &emsp; 12. `Run Hadoop Docker image`
