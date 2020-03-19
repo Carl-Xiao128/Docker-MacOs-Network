@@ -7,6 +7,6 @@
 
 >- Install a Docker for Mac
 >- Run a Hadoop image in Docker
->- View Hadoop HDFS WebUI by Using Hadoop containers IP
-    >-![sdf](https://drive.google.comopen?id=1xjyurFHdsEKO73FiDpCKwWoxR5OrmHCw)
+>- View Hadoop HDFS WebUI by Using Hadoop containers IP  
+![sd](https://drive.google.com/uc?export=view&id=1xjyurFHdsEKO73FiDpCKwWoxR5OrmHCw)
         View http://172.17.0.2:50070/
