@@ -5,27 +5,27 @@
 
 ## Problem
 
->- **Install a Docker for Mac**
->- **Run a Hadoop image in Docker**
->- **View Hadoop HDFS WebUI by Using Hadoop containers IP**  
+>- Install a Docker for Mac
+>- Run a Hadoop image in Docker
+>- View Hadoop HDFS WebUI by Using Hadoop containers IP  
 ```shell  
         docker inspect bbbbb | grep "IPAddress"
 ```
 >![](https://drive.google.com/uc?export=view&id=1ppBwjnrhq7ZETDr3dUVG4CEDAi6YTW6d)  
 
->- **Visit `http://172.17.0.2:50070/`&emsp; Found out I can't access HDFS WebUI**
->- **Try to ping container ip from mac terminal, it's failed too!**  
->- **Then I checked the official docker documentation and found out the problem** [Docker Documentation](https://docs.docker.com/docker-for-mac/networking/)
+>- Visit `http://172.17.0.2:50070/`&emsp; Found out I can't access HDFS WebUI
+>- Try to ping container ip from mac terminal, it's failed too!  
+>- Then I checked the official docker documentation and found out the problem [Docker Documentation](https://docs.docker.com/docker-for-mac/networking/)
 >![](https://drive.google.com/uc?export=view&id=1qF8wCUtamXxeUDD2yufncMniDXWHzgt3)  
->- **If you want to connect a container from the Mac, you need to use `Port Mapping` like below**
+>- If you want to connect a container from the Mac, you need to use `Port Mapping` like below
 ```shell  
         docker run -d –it -p 50070 -p 8088 --name bbbbb sequenceiq/hadoop-docker:2.7.1
 ```
->- **But I found some other problems, such as  `can't open log file`, `can't download Hadoop output result file.` from WebUI directly! You have to reach those file by using terminal command, Troublesome！**
+>- But I found some other problems, such as  `can't open log file`, `can't download Hadoop output result file.` from WebUI directly! You have to reach those file by using terminal command, Troublesome！
 
 
 ## Here is the solution!
->- **Using Docker for Mac experimental function: `Socket Proxy`**
+>- Using Docker for Mac experimental function: `Socket Proxy`
 > #### &emsp; 1. `Open Mac terminal` and `install jq`
 ```shell  
         brew install jq
