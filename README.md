@@ -1,16 +1,14 @@
 # Docker-MacOs-Network
+## Solving the Problem that Docker Desktop for Mac can’t route traffic to containers and You can access the containers by IP right away in MacOs platform!
 
-
-## Solving the Problem that "Docker Desktop for Mac can’t route traffic to containers"
-
-## Problem
+### Problem
 
 >- Install a Docker for Mac
 >- Run a Hadoop image in Docker
 >- View Hadoop HDFS WebUI by Using Hadoop containers IP  
-```shell  
+    ```shell  
         docker inspect bbbbb | grep "IPAddress"
-```
+    ```
 >![](https://drive.google.com/uc?export=view&id=1ppBwjnrhq7ZETDr3dUVG4CEDAi6YTW6d)  
 
 >- Visit `http://172.17.0.2:50070/`&emsp; Found out I can't access HDFS WebUI
@@ -85,7 +83,27 @@
         http://172.17.0.2:8088
         http://172.17.0.2:50070
 ```
+## The benefits of using containers IP to access WebUI
+>- `It won't occupy your Mac local Port`
+>- `All WebUI support invoke each other, such as`  
+>>  `ResourceManager Web UI: 8088`  
+>>  `NodeManager Web UI: 8042`   
+>>  `NameNode Web UI: 50070`   
+>>  `DataNode Web UI: 50075`  
+>>  `Secondary NameNode Web UI: 50090`  
+>>  `JobTracker Web UI: 50030`
+>>  `Task­Tracker Web UI: 50060`
+>- `Looking at current status of HDFS, explore file system`
+>- `Exploring file system, download HDFS file directly`
+>- `Checking status and log file`  
 
+![](https://drive.google.com/uc?export=view&id=1Gn09ivZH4XZO1McvialW0_XNbYG4KMbI)  
+
+![](https://drive.google.com/uc?export=view&id=1JtUXrx2Dph86-WL3daDJ-iTjRmuNPQTu)
+
+![](https://drive.google.com/uc?export=view&id=1divlbiJHa2UrG1s8fSZ_wzqw2JeT0RDb)
 
 ## Referenced Documentation
-[1]:  https://docs.docker.com/docker-for-mac/networking/
+[D1]&emsp;<https://docs.docker.com/docker-for-mac/networking/>  
+[D2]&emsp;<https://windmt.com/2019/08/30/docker-for-mac-network/>  
+[D3]&emsp;<https://www.jianshu.com/p/d006a34a343f>
