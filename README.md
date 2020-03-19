@@ -86,16 +86,16 @@
 ## The benefits of using containers IP to access WebUI
 >- `It won't occupy your Mac local Port`
 >- `All WebUI support invoke each other, such as`  
->>  `ResourceManager Web UI: 8088`  
->>  `NodeManager Web UI: 8042`   
->>  `NameNode Web UI: 50070`   
->>  `DataNode Web UI: 50075`  
->>  `Secondary NameNode Web UI: 50090`  
->>  `JobTracker Web UI: 50030`
->>  `Task­Tracker Web UI: 50060`
->- `Looking at current status of HDFS, explore file system`
->- `Exploring file system, download HDFS file directly`
->- `Checking status and log file`  
+>> - &emsp; `ResourceManager Web UI: 8088`  
+>> - &emsp; `NodeManager Web UI: 8042`   
+>> - &emsp; `NameNode Web UI: 50070`   
+>> - &emsp; `DataNode Web UI: 50075`  
+>> - &emsp; `Secondary NameNode Web UI: 50090`  
+>> - &emsp; `JobTracker Web UI: 50030`
+>> - &emsp; `TaskTracker Web UI: 50060`
+>-  `Looking at current status of HDFS, explore file system`
+>-  `Exploring file system, download HDFS file directly`
+>-  `Checking status and log file`  
 
 ![](https://drive.google.com/uc?export=view&id=1Gn09ivZH4XZO1McvialW0_XNbYG4KMbI)  
 
