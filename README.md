@@ -1,5 +1,6 @@
 # Docker-MacOs-Network
-## Solving the Problem that Docker Desktop for Mac can’t route traffic to containers and You can access the containers by IP right away in MacOs platform!
+## Solving the Problem that Docker Desktop for Mac can’t route traffic to containers and You can access the containers by IP right away away in Docker for Mac Platform!
+
 
 ### Problem
 
