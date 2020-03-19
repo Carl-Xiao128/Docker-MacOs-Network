@@ -14,7 +14,7 @@
 >- Visit `http://172.17.0.2:50070/`&emsp; Found out I can't access HDFS WebUI
 >- Try to ping container ip from mac terminal, it's failed too!  
 >- Then I checked the official docker documentation and found out the problem [Docker Documentation](https://docs.docker.com/docker-for-mac/networking/)
->![](https://drive.google.com/uc?export=view&id=1qF8wCUtamXxeUDD2yufncMniDXWHzgt3)  
+>![](https://github.com/Carl-Xiao128/Markdown-Pictures/raw/master/pictures/1584588445749.jpg)  
 >- If you want to connect a container from the Mac, you need to use `Port Mapping` like below
 ```shell  
         docker run -d –it -p 50070 -p 8088 --name bbbbb sequenceiq/hadoop-docker:2.7.1
@@ -38,14 +38,14 @@
 > #### &emsp; 4. Go `System Preference` -> `Network` -> `Advanced` ->
 > #### &emsp;&ensp; `Proxies` ->  Select `Automatic Proxy Configuration` ->
 > #### &emsp;&ensp; Type `http://localhost/socket.pac` into the URL
->![](https://drive.google.com/uc?export=view&id=1Uzq2tmLo0tbROemx6e_HC_myfc6tvLsZ)
+>![](https://github.com/Carl-Xiao128/Markdown-Pictures/raw/master/pictures/1584592146869.jpg)
 > #### &emsp; 5. `Start Mac local Apache service`
 ```shell  
         sudo apachectl start
 ```
 > #### &emsp; 6. `Check Apache service status`, Visit `http://localhost`,
 > #### &emsp;&ensp; it's started successfully if the browser shows "It works!"
->![](https://drive.google.com/uc?export=view&id=1GH2c6l6uVlpVR1croAfqXGu35MCVe4hq)
+>![](https://github.com/Carl-Xiao128/Markdown-Pictures/raw/master/pictures/1584592731252.jpg)
 > #### &emsp; 7. `Create Pac file`, File name : `socket.pac`, content below
 ```shell  
         function FindProxyForURL(url, host) {
@@ -60,18 +60,18 @@
 ```
 > #### &emsp; 8. Put  `socket.pac` file in directory `/Library/WebServer/Documents`
 > #### &emsp;&ensp; and Visit `http://localhost/socket.pac`, if the browser shows:
->![](https://drive.google.com/uc?export=view&id=1iWN58Sw_JohC0k2xrbe21ZKpnNceKe8w)
+>![](https://github.com/Carl-Xiao128/Markdown-Pictures/raw/master/pictures/1584593940858.jpg)
 > #### &emsp; 9. `Check the containers hosts`
 ```shell  
         cat /etc/hosts
 ```
->![](https://drive.google.com/uc?export=view&id=1pMP0MB-ka4ziAKz_st7uv3j6jMEXsyD3)
+>![](https://github.com/Carl-Xiao128/Markdown-Pictures/raw/master/pictures/1584594900541.jpg)
 > #### &emsp; 10. `Modify the MacOs hosts File`
->![](https://drive.google.com/uc?export=view&id=1qeO3ooLLLoBVX1NpL_ij2i9omrs1RPzG)
+>![](https://github.com/Carl-Xiao128/Markdown-Pictures/raw/master/pictures/1584595062931.jpg)
 > #### &emsp; 11. `The Socket Proxy configuration is finished!`
 > #### &emsp; 12. `Run Hadoop Docker image`
->![](https://drive.google.com/uc?export=view&id=1UjnhMVrB7869I8IQAKSCG_7yHZtpE-J9)
->![](https://drive.google.com/uc?export=view&id=10WEDOUMnMjmCN7nitbzDMuvvZjgVJIQu)
+>![](https://github.com/Carl-Xiao128/Markdown-Pictures/raw/master/pictures/1584594400817.jpg)
+>![](https://github.com/Carl-Xiao128/Markdown-Pictures/raw/master/pictures/1584595279625.jpg)
 > #### &emsp; 13. `Visiting HDFS WebUI and Resource Manager WebUI have two ways`
 >>- ##### &emsp; `By Port Mapping!`
 ```shell  
@@ -97,11 +97,11 @@
 >-  `Exploring file system, download HDFS file directly`
 >-  `Checking status and log file`  
 
-![](https://drive.google.com/uc?export=view&id=1Gn09ivZH4XZO1McvialW0_XNbYG4KMbI)  
+![](https://github.com/Carl-Xiao128/Markdown-Pictures/raw/master/pictures/1584600399964.jpg)  
 
-![](https://drive.google.com/uc?export=view&id=1JtUXrx2Dph86-WL3daDJ-iTjRmuNPQTu)
+![](https://github.com/Carl-Xiao128/Markdown-Pictures/raw/master/pictures/1584600465420.jpg)
 
-![](https://drive.google.com/uc?export=view&id=1divlbiJHa2UrG1s8fSZ_wzqw2JeT0RDb)
+![](https://github.com/Carl-Xiao128/Markdown-Pictures/raw/master/pictures/1584600433214.jpg)
 
 ## Referenced Documentation
 [D1]&emsp;<https://docs.docker.com/docker-for-mac/networking/>  
